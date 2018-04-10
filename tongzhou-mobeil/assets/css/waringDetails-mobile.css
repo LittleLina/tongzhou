@@ -1,0 +1,206 @@
+﻿/*!
+ * waringDetails页面css代码。
+ */
+
+html,
+body
+{
+    overflow: hidden;
+    font-family: '微软雅黑' !important;
+    width: 100%;
+    height: 100%;
+}
+/* 背景径向渐变
+   ========================================================================== */
+
+/* body
+{
+    background: radial-gradient(circle at 0px 0px, rgba(255, 121, 197, .75) 2.5%, rgb(95, 125, 187) 35%, rgb(153, 222, 238) 75%);
+}
+ */
+/* navbar-default
+   ========================================================================== */
+
+.navbar-default
+{
+    background: transparent;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form
+{
+    color: #fff;
+    border-color: rgba(255, 255, 255, .2);
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a
+{
+    color: #fff;
+}
+
+.navbar-collapse
+{
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+}
+/* navbar-header
+   ========================================================================== */
+
+.navbar-header
+{
+    background: rgba(0, 0, 0, .3);
+}
+
+.navbar-toggle
+{
+    float: left;
+
+    margin-left: 15px;
+
+    color: #fff;
+    border: none;
+}
+
+.navbar-toggle.navbar-refresh
+{
+    float: right;
+
+    margin-right: 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+{
+    background-color: rgba(51, 51, 51, .8);
+}
+
+.navbar-default
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    margin: 0;
+
+    border: none;
+}
+/* .site-content
+   ========================================================================== */
+
+.site-content
+{
+    margin-top: 54px;
+}
+/* .site-title
+   ========================================================================== */
+
+.site-title
+{
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(0, 0, 0, .3);
+
+}
+/* .site-info
+   ========================================================================== */
+
+.site-info
+{
+    font-size: 14px;
+
+    padding: 5px 15px;
+
+    color: #fff;
+}
+
+.site-info__param
+{
+    margin-top: 15px;
+}
+.site-info__param input{
+    background: rgba(0, 0, 0, .2);
+    border: 1px solid rgba(255, 255, 255, .2);
+    padding: 5px 10px;
+    width: 53%;
+}
+.site-info__param--input input:nth-child(1){
+    width: 30%;
+}
+.site-info__param--input input:nth-child(1){
+    width: 30%;
+}
+.site-controlBox
+{
+    margin-top: 20px;
+    padding: 5px 20px;
+
+    color: #fff;
+}
+.site-controlBox__group
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox-inline + .checkbox-inline,
+.radio-inline + .radio-inline
+{
+    margin: 0;
+}
+
+
+/* .site-table
+   ========================================================================== */
+.site-table{
+    width: 100%;
+    overflow: auto;
+    margin-top: 15px;
+    padding: 5px 20px;
+}
+
+.waring-info{
+    background-color: rgba(51, 51, 51, .3);
+    margin-top: 20px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.data-list{
+    width: 58%;
+    height: 28px;
+    background: rgba(0, 0, 0, .2) !important;
+}
+.air-data{
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+}
+.air-name{
+    position: relative;
+    top: 10px;
+    right:5px;
+}
+.offline{
+    margin-right: 10px;
+}

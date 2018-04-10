@@ -1,0 +1,209 @@
+body
+{
+    font-family: '微软雅黑' !important;
+
+    background: radial-gradient(circle at 0px 0px, rgba(255, 121, 197, .75) 2.5%, rgb(95, 125, 187) 35%, rgb(153, 222, 238) 75%);
+}
+/* 清楚手机端默认样式
+   ========================================================================== */
+input[type=button],
+input[type=submit],
+input[type=file],
+button
+{
+    cursor: pointer;
+
+    -webkit-appearance: none;
+}
+a,
+input,
+button,
+span,
+div,
+p,
+ul,
+li,
+dl,
+dd,
+dt,
+select,
+textarea
+{
+    outline: none;
+
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    tap-highlight: none;
+}
+/* .header
+   ========================================================================== */
+.container-fluid
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-header
+{
+    position: relative;
+
+    width: 100%;
+    height: 54px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+
+    background: -webkit-radial-gradient(0px 0px circle, rgba(135, 91, 148, .9) 15%, rgb(104, 86, 140) 35%, rgb(66,90,139) 75%);
+    background:         radial-gradient(circle at 0px 0px, rgba(135, 91, 148, .9) 2.5%, rgb(104, 86, 140) 35%, rgb(66,90,139) 75%);
+}
+.title
+{
+    font-size: 16px;
+    line-height: 54px;
+
+    display: inline-block;
+
+    width: 100%;
+
+    text-align: center;
+
+    color: #fff;
+}
+.navbar-toggle
+{
+    position: absolute;
+    left: 15px;
+
+    color: #fff;
+    border: none;
+}
+.navbar-refresh
+{
+    position: absolute;
+    top: 17px;
+    right: 45px;
+
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+/* .global-nav
+   ========================================================================== */
+.global-nav
+{
+    position: fixed;
+    z-index: 100;
+    top: 54px;
+    left: 0;
+
+    display: none;
+
+    width: 130px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: #fff;
+}
+.global-nav li
+{
+    font-size: 14px;
+    line-height: 40px;
+
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+
+    color: #333;
+}
+.global-nav li span
+{
+    font-size: 16px;
+
+    margin-right: 10px;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+{
+    background: transparent;
+}
+.mark
+{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .4);
+}
+.line
+{
+    margin: 20px 10px;
+
+    border-top: 1px solid #fff;
+}
+.navbtn
+{
+    position: absolute;
+    top: 17px;
+    left: 15px;
+
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+.cheart
+{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+.list
+{
+    position: absolute;
+    top: 19px;
+    right: 10px;
+
+    color: #fff;
+    border: none;
+    background: transparent;
+}
+.cheart a
+{
+    color: #fff;
+}
+.cheart i
+{
+    font-size: 26px;
+}
+.list a
+{
+    color: #fff;
+}
+.list i
+{
+    font-size: 21px;
+}
+.navbar-refresh a
+{
+    color: #fff;
+}
+.navbar-refresh i
+{
+    font-size: 26px;
+}
+.icon-caidan
+{
+    font-size: 26px;
+}

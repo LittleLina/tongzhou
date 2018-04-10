@@ -1,0 +1,481 @@
+﻿/*!
+ * historyData页面css代码。
+ */
+
+html,
+body
+{
+    font-family: '微软雅黑' !important;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+/* 背景径向渐变
+   ========================================================================== */
+
+/* body
+{
+    background: radial-gradient(circle at 0px 0px, rgba(255, 121, 197, .75) 2.5%, rgb(95, 125, 187) 35%, rgb(153, 222, 238) 75%);
+}
+ */
+/* navbar-default
+   ========================================================================== */
+
+.navbar-default
+{
+    background: transparent;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form
+{
+    color: #fff;
+    border-color: rgba(255, 255, 255, .2);
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a
+{
+    color: #fff;
+}
+
+.navbar-collapse
+{
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+}
+/* navbar-header
+   ========================================================================== */
+.navbar-toggle
+{
+    float: left;
+
+    margin-left: 15px;
+
+    color: #fff;
+    border: none;
+}
+
+.navbar-toggle.navbar-refresh
+{
+    float: right;
+
+    margin-right: 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+{
+    background-color: rgba(51, 51, 51, .8);
+}
+
+.navbar-default
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    margin: 0;
+
+    border: none;
+}
+/* .site-content
+   ========================================================================== */
+
+
+/* .site-title
+   ========================================================================== */
+
+.site-title
+{
+    font-size: 16px;
+    line-height: 32px;
+
+    height: 32px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(0, 0, 0, .3);
+}
+/* .site-info
+   ========================================================================== */
+
+.site-info
+{
+    font-size: 14px;
+
+    padding: 5px 15px;
+
+    color: #fff;
+}
+
+.site-info__param
+{
+    margin-top: 15px;
+}
+.site-info__param input
+{
+    width: 53%;
+    padding: 5px 10px;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .2);
+}
+.site-info__param--input input:nth-child(1)
+{
+    width: 30%;
+}
+.site-info__param--input input:nth-child(1)
+{
+    width: 30%;
+}
+.site-controlBox
+{
+    margin-top: 20px;
+    padding: 5px 20px;
+
+    color: #fff;
+}
+.site-controlBox__group
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox-inline + .checkbox-inline,
+.radio-inline + .radio-inline
+{
+    margin: 0;
+}
+
+
+/* .site-table
+   ========================================================================== */
+.site-table
+{
+    overflow: auto;
+
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px 20px;
+}
+.header-nav
+{
+    display: flex;
+
+    height: 55px;
+
+    background: -webkit-radial-gradient(0px 0px circle, rgba(135, 91, 148, .9) 15%, rgb(104, 86, 140) 35%, rgb(66,90,139) 75%);
+    background:         radial-gradient(circle at 0px 0px, rgba(135, 91, 148, .9) 2.5%, rgb(104, 86, 140) 35%, rgb(66,90,139) 75%);
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.header-nav a
+{
+    font-size: 16px;
+    line-height: 55px;
+
+    display: inline-block;
+
+    width: 50%;
+
+    text-align: center;
+
+    color: #fff;
+}
+.header-nav a:nth-child(1)
+{
+    text-decoration: none;
+
+    border-bottom: 2px solid #428bca;
+}
+.header-nav a:nth-child(2)
+{
+    text-decoration: none;
+}
+.tempure
+{
+    font-weight: bold;
+
+    margin: 0  10px;
+}
+.active
+{
+    background-color: rgba(51, 51, 51, .3);
+}
+#tab-data-info li.active > a
+{
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.2);
+    border-bottom: none;
+    background-color: rgba(51, 51, 51, .3);
+}
+.choose-site
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+#tab-data-info li.active > a:hover
+{
+    border: none;
+    border-bottom: none !important;
+}
+.nav-noneBorder
+{
+    border-bottom: none;
+}
+#tab-data-info a
+{
+    color: #fff;
+}
+#myTabContent div
+{
+    padding: 15px 5px;
+
+    border: 1px solid rgba(255,255,255,.2);
+}
+#hour span,
+#day span,
+#mounth span
+{
+    font-size: 16px;
+}
+.data-info
+{
+    background-color: rgba(51, 51, 51, .3);
+}
+.choose-date
+{
+    font-size: 14px !important;
+
+    padding-left: 10px;
+}
+.partLine
+{
+    padding-left: 10px;
+}
+.line
+{
+    margin: 20px 10px;
+
+    border-top: .5px solid rgba(255,255,255,.2);
+}
+.offline
+{
+    margin-right: 10px;
+}
+.drop-caret
+{
+    margin-left: 15px;
+}
+.site-area
+{
+    font-size: 16px;
+}
+.choose-site option
+{
+    background-color: #ccc;
+}
+.tab-title
+{
+    font-size: 14px;
+
+    display: table;
+
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0 10px;
+
+    color: #fff;
+}
+.tab-title li
+{
+    line-height: 30px;
+
+    float: left;
+
+    width: 25%;
+
+    list-style: none;
+
+    text-align: center;
+
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+.tab-title li.tab-title__active
+{
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: none;
+    border-radius: 2px 2px 0 0;
+    background: rgba(0, 0, 0, .2);
+}
+.tab-content
+{
+    height: 70px;
+    margin: 0 10px;
+    margin-bottom: 20px;
+
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .2);
+}
+.tab-content p
+{
+    display: none;
+
+    margin: 20px 15px;
+}
+.tab-content .tab-content__active
+{
+    display: block;
+}
+.tab-content input
+{
+    height: 30px;
+    padding-left: 30px !important;
+
+    border: none;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: url('../images/imgs/rili.png') 5px 4px no-repeat rgba(0, 0, 0, .2) !important;
+    background-size: 20px !important;
+}
+/* .site-content
+   ========================================================================== */
+.site-content
+{
+    position: relative;
+
+    overflow-y: auto;
+
+    box-sizing: border-box;
+    padding: 0 10px 0;
+}
+.site__title
+{
+    font-size: 16px;
+    line-height: 32px;
+
+    display: table;
+
+    width: 100%;
+    height: 32px;
+
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 2px;
+    background: rgba(0, 0, 0, .2);
+}
+.site__title span
+{
+    float: left;
+
+    width: 33.33%;
+
+    text-align: center;
+}
+.site__list
+{
+    font-size: 14px;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
+}
+.site__list li
+{
+    line-height: 40px;
+
+    display: table;
+
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+.site__list li span
+{
+    float: left;
+    overflow: hidden;
+
+    width: 33.33%;
+
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.pagediv
+{
+    display: table;
+
+    margin: 10px auto;
+
+    list-style: none;
+}
+.pagediv li
+{
+    float: left;
+
+    padding: 5px 12px;
+
+    list-style: none;
+
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .2);
+}
+.pagediv li.active
+{
+    background: rgba(0, 0, 0, .4);
+}
+.pagediv li a
+{
+    display: block;
+
+    color: #fff;
+}
+.line-container
+{
+    display: table;
+
+    width: 100%;
+}
+.line-container select
+{
+    float: right;
+
+    width: 50px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(0,0,0,.2) url('../images/imgs/down.png') 96% 7px no-repeat;
+}
+.tabcheck
+{
+    margin-top: 54px;
+}

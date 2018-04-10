@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核 ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- IOS6全屏 Chrome高版本全屏
+    ================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- 让360双核浏览器用webkit内核渲染页面
+    ================================================== -->
+    <meta name="renderer" content="webkit">
+    <!-- !!!注意 minimal-ui 是IOS7.1的新属性，最小化浏览器UI -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <title>通州环境监测系统</title>
+    <!-- CSS
+    ================================================== -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./assets/js/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- icons -->
+    <link href="./assets/css/plugins/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/plugins/animate.css">
+    <!--detail.css-->
+    <link href="./assets/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/js/plugins/popup/sweetalert.css">
+    <link rel="stylesheet" href="./assets/css/realTime-mobile.css">
+    <script src="./assets/js/plugins/echarts.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbtn">
+                    <i class="icon-caidan"></i>
+                </button>
+                <span class="title">监测图表</span>
+                <button type="button" class="navbar-refresh">
+                    <a href="map-mobile.html"><i class="icon-map"></i></a>
+                </button>
+                <button type="button" class="list">
+                    <a href="list-mobile.html"><i class="icon-ziliao"></i></a>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 公共导航 -->
+    <ul class="global-nav animated bounceInLeft bounceOutLeft">
+        <a href="">
+            <a href="map-mobile.html"><li><span><i class="icon-jiance"></i></span>大气监测</li></a>
+        </a>
+        <a href="">
+            <li><span><i class="icon-shuizhi"></i></span>水质监测</li>
+        </a>
+        <a href="">
+            <li><span><i class="icon-lishi"></i></span>历史数据</li>
+        </a>
+        <a href="">
+            <li><span><i class="icon-baojing"></i></span>报警信息</li>
+        </a>
+    </ul>
+    <div class="mark"></div>
+    <!-- one start -->
+    <div class="site-content">
+        <div class="site-info">
+            <!-- <div class="site-info__weather">
+                <span>河北省</span>
+                <span>邯郸市　| </span>
+                <strong><span>　28℃　</span><span>晴转多云</span>　</strong>
+                <img src="./assets/images/imgs/sun.png" alt="">
+            </div> -->
+            <div class="site-info__param site-info__param--input">
+                <span>更新时间：</span>
+                <span id="nowdate"></span>
+            </div>
+            <div class="site-info__param">
+                <span class="">选择项目：</span>
+                <select name="" id="" class="site-check">
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <!-- one end -->
+    <!-- 选择参数 start -->
+    <ul class="check-content">
+        <li class="active" data-type="AQI_data">AQI</li>
+        <li data-type="PM25_data">PM2.5</li>
+        <li data-type="PM10_data">PM10</li>
+        <li data-type="NO2_data">NO<small>2</small></li>
+        <li data-type="SO2_data">SO<small>2</small></li>
+        <li data-type="O3_data">O<small>3</small></li>
+        <li data-type="CO_data">CO</li>
+        <li data-type="TSP_data">TSP</li>
+    </ul>
+    <!-- 选择参数 end -->
+    <!-- 折线图 start -->
+    <div class="line-container">
+        <span class="unit">单位：ug/m³</span>
+        <ul class="legendcolor">
+            <li>
+                <span class="color"></span>
+                <span>优</span>
+            </li>
+            <li>
+                <span class="color"></span>
+                <span>良</span>
+            </li>
+            <li>
+                <span class="color"></span>
+                <span>轻度</span>
+            </li>
+            <li>
+                <span class="color"></span>
+                <span>中度</span>
+            </li>
+            <li>
+                <span class="color"></span>
+                <span>重度</span>
+            </li>
+            <li>
+                <span class="color"></span>
+                <span>严重</span>
+            </li>
+        </ul>
+        <div id="line" style="width: 100%;height:400px;"></div>
+    </div>
+    <!-- 折线图 end -->
+    <!-- 最新的 Jquery 核心 JavaScript 文件 -->
+    <script src="./assets/js/plugins/jquery-1.11.1.js"></script>
+    <!-- detail-mobile JavaScript 文件 -->
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/plugins/popup/sweetalert.min.js"></script>
+    <script src="./assets/js/tool.js"></script>
+    <script src="./assets/js/realTime-mobile.js"></script>
+</body>
+</html>

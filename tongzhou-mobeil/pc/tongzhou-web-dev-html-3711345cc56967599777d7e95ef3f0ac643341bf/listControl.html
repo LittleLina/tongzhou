@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>通州环境监测系统</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 最新版本的 Bootstrap-table 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.css" rel="stylesheet">
+    <!-- icons -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- userMgmt.css -->
+    <!--<link rel="stylesheet" type="text/css" href="./assets/css/userMgmt.css">-->
+    <!-- waring.css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/waring.css">
+</head>
+
+<body>
+    <div class="site-header" style="height: 70px;background: green;">
+        占位区域
+    </div>
+    <div class="site-layout">
+        <div class="site-layout__sidebar">
+        <!-- <div class="sidebar-lists__collapse">收起</div> -->
+            <ul class="sidebar-lists">
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            用户管理
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="site-layout__content">
+            <div id="breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="#">系统首页</a></li>
+                    <li><a href="#">个人中心</a></li>
+                </ol>
+            </div>
+            <hr/>
+            <div class="dataPanel">
+                <div class="waringTable">异常报警一览表</div>
+                <form class="form-inline form-1">
+                    <div class="form-group object-list" >
+                        <label  class="control-label">项目:</label>
+                        <select  class=" object">
+                            <option value="" selected="selected">全部
+                            </option>
+                            <option value="5"  >全部
+                            </option>
+                            <option value="4"  >3
+                            </option>
+                            <option value="3"  >4
+                            </option>
+                            <option value="2"  >1
+                            </option>
+                            <option value="1"  >2
+                            </option>
+                        </select>
+                     </div><div class="form-group object-list">
+                    <label  class="control-label" >是否消警:</label>
+                    <select  class=" object">
+                        <option value="" selected="selected">全部
+                        </option>
+                        <option value="5"  >2
+                        </option>
+                        <option value="4"  >3
+                        </option>
+                        <option value="3"  >4
+                        </option>
+                        <option value="2"  >1
+                        </option>
+                        <option value="1"  >2
+                        </option>
+                    </select>
+                </div><div class="form-group object-list">
+                    <label  class="control-label">开始时间:</label>
+                    <select  class=" object">
+                        <option value="" selected="selected">全部
+                        </option>
+                        <option value="5"  >2
+                        </option>
+                        <option value="4"  >3
+                        </option>
+                        <option value="3"  >4
+                        </option>
+                        <option value="2"  >1
+                        </option>
+                        <option value="1"  >2
+                        </option>
+                    </select>
+                </div>
+                </form>
+                <form class="form-inline form-2">
+                    <div class="form-group object-list">
+                        <label  class="control-label">站点:</label>
+                        <select  class=" object">
+                            <option value="" selected="selected">全部
+                            </option>
+                            <option value="5"  >2
+                            </option>
+                            <option value="4"  >3
+                            </option>
+                            <option value="3"  >4
+                            </option>
+                            <option value="2"  >1
+                            </option>
+                            <option value="1"  >2
+                            </option>
+                        </select>
+                    </div><div class="form-group object-list">
+                    <label  class="control-label" >是否处理:</label>
+                    <select  class=" object">
+                        <option value="" selected="selected">全部
+                        </option>
+                        <option value="5"  >2
+                        </option>
+                        <option value="4"  >3
+                        </option>
+                        <option value="3"  >4
+                        </option>
+                        <option value="2"  >1
+                        </option>
+                        <option value="1"  >2
+                        </option>
+                    </select>
+                </div>
+                    <div class="form-group object-list">
+                    <label  class="control-label">结束时间:</label>
+                    <select  class=" object">
+                        <option value="" selected="selected">全部
+                        </option>
+                        <option value="5"  >2
+                        </option>
+                        <option value="4"  >3
+                        </option>
+                        <option value="3"  >4
+                        </option>
+                        <option value="2"  >1
+                        </option>
+                        <option value="1"  >2
+                        </option>
+                    </select>
+                </div>
+                </form>
+                <form class="form-inline form-3">
+                    <div class="form-group object-list">
+                        <label  class="control-label">设备:</label>
+                        <select  class=" object">
+                            <option value="" selected="selected">全部
+                            </option>
+                            <option value="5"  >2
+                            </option>
+                            <option value="4"  >3
+                            </option>
+                            <option value="3"  >4
+                            </option>
+                            <option value="2"  >1
+                            </option>
+                            <option value="1"  >2
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group object-list">
+                    <label  class="control-label" >报警等级:</label>
+                    <select  class=" object">
+                        <option value="" selected="selected">全部
+                        </option>
+                        <option value="5"  >2
+                        </option>
+                        <option value="4"  >3
+                        </option>
+                        <option value="3"  >4
+                        </option>
+                        <option value="2"  >1
+                        </option>
+                        <option value="1"  >2
+                        </option>
+                    </select>
+                </div>
+                    <div class="form-group object-list-1">
+                       <button class="btn btn-info research" ><i class="glyphicon glyphicon-search search"></i>搜索</button>
+                        <button class="btn btn-info research">导出</button>
+                    </div>
+                </form>
+            </div>
+
+            <table id="table" data-toolbar="#toolbar" data-search="true" data-show-refresh="true" data-show-toggle="true" data-show-export="true" data-minimum-count-columns="2"> </table>
+         </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./assets/js/plugins/jquery-1.11.1.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 最新的 Bootstrap-table 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+    <!-- 最新的 Bootstrap-table 中文支持 文件 -->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>-->
+    <!-- waring.js -->
+    <script src="./assets/js/waring.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+/*!
+ * userMgmt页面css代码。
+ */
+
+
+/* 登陆页面 - 背景径向渐变
+   ========================================================================== */
+
+html,
+body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    min-width: 1024px;
+    height: 100%;
+    /* 使用rem做为响应式字体单位，如：1.4rem = 14px */
+}
+
+body {
+    background: -webkit-radial-gradient(0px 0px circle, rgba(255, 121, 197, .75) 2.5%, rgb(95, 125, 187) 35%, rgb(153, 222, 238) 75%);
+    background: radial-gradient(circle at 0px 0px, rgba(255, 121, 197, .75) 2.5%, rgb(95, 125, 187) 35%, rgb(153, 222, 238) 75%);
+}
+
+
+/* site-layout 布局样式
+   ========================================================================== */
+
+.site-layout {
+    overflow: hidden;
+    *zoom: 1;
+}
+
+.site-layout__content,
+.site-layout__sidebar {
+    background-color: transparent;
+}
+
+.site-layout__sidebar {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: rgba(51, 51, 51, .4);
+    -webkit-transition: width .75s;
+    transition: width .75s;
+}
+
+.site-layout__sidebar.site-layout__sidebar--collapse {
+    width: 40px;
+    -webkit-transition: width .75s;
+    transition: width .75s;
+}
+
+.site-layout__content {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-left: 100px;
+    -webkit-transition: margin-left .75s;
+    transition: margin-left .75s;
+}
+
+.site-layout__content.site-layout__content--collapse {
+    margin-left: 40px;
+    -webkit-transition: margin-left .75s;
+    transition: margin-left .75s;
+}
+
+
+/* sidebar-lists 样式
+   ========================================================================== */
+
+.sidebar-lists {
+    margin-top: 25px;
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-lists .list-item {
+    padding: 25px 5px;
+    display: block;
+    width: 100%;
+}
+
+.sidebar-lists .list-item:hover {
+    background-color: rgba(51, 51, 51, .8);
+    -webkit-transition: background-color .75s;
+    transition: background-color .75s;
+}
+
+.sidebar-lists .list-item>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.list-item__icon,
+.list-item__title {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.list-item__icon {
+    font-size: 2rem;
+}
+
+.list-item__title {
+    font-size: 1.4rem;
+}
+
+.sidebar-lists__collapse {
+    box-sizing: border-box;
+    position: relative;
+    left: 25px;
+    float: right;
+    width: 25px;
+    background: #4389c7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #a797cd;
+    border-left: none;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 20px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+sidebar-lists__collapse:hover {
+    cursor: pointer;
+}
+
+
+/* breadcrumb 样式
+   ========================================================================== */
+
+.breadcrumb {
+    background: transparent;
+    font-size: 1.4rem
+}
+
+.breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.breadcrumb>.active {
+    color: #cbbcdf;
+}
+
+
+/* #toolbar 样式
+   ========================================================================== */
+
+#toolbar>button {
+    margin-left: 10px;
+}
+
+#toolbar>button:first-child {
+    margin-left: 0;
+}
+
+.fixed-table-toolbar:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+
+}
+
+.fixed-table-toolbar {
+    *+height: 1%;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+    background-color: rgba(51, 51, 51, .3);
+}
+
+
+/* bootstrap-table 插件样式
+   ========================================================================== */
+
+.fixed-table-container {
+    background-color: rgba(51, 51, 51, .2);
+}
+
+.bootstrap-table .table thead {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    background: rgba(106, 97, 144, .95);
+}
+
+.bootstrap-table .table tbody {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.bootstrap-table .table > tbody > tr:nth-of-type(even) {
+    background: rgba(106, 97, 144, .75);
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: rgba(51, 51, 51, .4);
+    -webkit-transition: background-color .75s;
+    transition: background-color .75s;
+}
+
+.pagination-detail {
+    color: #fff;
+}
+
+.operate {
+    font-size: 1.6rem;
+    margin-left: 35px;
+    color: #fff;
+}

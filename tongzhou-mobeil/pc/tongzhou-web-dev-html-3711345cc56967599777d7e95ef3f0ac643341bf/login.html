@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>通州环境监测系统</title>
+    <!-- icons -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- login.css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/login.css">
+</head>
+
+<body>
+    <!-- login-wrapper 组件 -->
+    <div class="login-wrapper">
+        <div class="login-wrapper__title">
+            <h1>通州环境监测系统</h1>
+        </div>
+        <div class="login-wrapper__content">
+            <!-- login-box 组件 -->
+            <div class="login-box">
+                <div class="login-box__title">
+                    用户登录
+                </div>
+                <div class="login-box__content">
+                    <!-- login-form 组件 -->
+                    <form>
+                        <div class="form-group">
+                            <label for="login_form_user">用户名称</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </span>
+                                <input type="email" class="form-control" id="login_form_user" placeholder="您的账号">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="login_form_password">密码</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                </span>
+                                <input type="password" class="form-control" id="login_form_password" placeholder="您的密码">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block btn-login">登 陆</button>
+                    </form>
+                    <!-- /login-form 组件 -->
+                </div>
+            </div>
+            <!-- /login-box 组件 -->
+        </div>
+    </div>
+    <!-- /login-wrapper 组件 -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./assets/js/plugins/jquery-1.11.1.js"></script>
+    <!-- login js -->
+    <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

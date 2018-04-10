@@ -1,0 +1,74 @@
+/*!
+ * updateҳ��css���롣
+ */
+html,
+body
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.choose
+{
+    display: block;
+
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    /* background:rgba(0,0,0,0.2) url('../images/imgs/down.png') 95% 10px no-repeat; */
+
+    color: #fff;
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, .2);
+}
+
+.site-controlBox
+{
+    margin-top: 20px;
+    padding: 5px 20px;
+
+    color: #fff;
+}
+.offline
+{
+    margin-right: 10px;
+}
+.site-info__param span:nth-child(1)
+{
+    width: 26%;
+}
+.site-info__param span:nth-child(2)
+{
+    width: 56%;
+}
+.data-list
+{
+    width: 175px;
+    height: 28px;
+
+    background: rgba(0, 0, 0, .2) !important;
+}
+.air-data
+{
+    font-size: 16px;
+
+    position: relative;
+    top: 3px;
+
+    margin-left: 10px;
+}
+.air-name
+{
+    position: relative;
+    top: 10px;
+    right: 5px;
+
+    width: 22% !important;
+}

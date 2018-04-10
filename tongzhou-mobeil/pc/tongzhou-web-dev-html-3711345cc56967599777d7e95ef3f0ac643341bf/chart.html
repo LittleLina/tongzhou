@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>通州环境监测系统</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 最新版本的 Bootstrap-table 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.css" rel="stylesheet">
+    <!-- icons -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- userMgmt.css -->
+    <!--<link rel="stylesheet" type="text/css" href="./assets/css/userMgmt.css">-->
+    <!-- chart.css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/chart.css">
+    <!--swiper.css-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/plugins/swiper-3.4.2.min.css">
+    <!--Echarts文件-->
+    <script src="assets/js/plugins/echarts.js"></script>
+</head>
+
+<body>
+    <div class="site-header" style="height: 70px;background: green;">
+        占位区域
+    </div>
+    <div class="site-layout">
+        <div class="site-layout__sidebar">
+        <!-- <div class="sidebar-lists__collapse">收起</div> -->
+            <ul class="sidebar-lists">
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            站点报警
+                        </span>
+                    </a>
+                </li>
+                <li class="list-item">
+                    <a href="" title="">
+                        <span class="list-item__icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="list-item__title">
+                            用户管理
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="site-layout__content">
+            <div id="breadcrumb">
+                <ol class="breadcrumb">
+                    <li><a href="#">系统首页</a></li>
+                    <li class="active">历史数据</li>
+                </ol>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default dataPanel ">
+                        <form class="form-horizontal panelstyle" role="form">
+                            <div class="form-group">
+                                <label  class="col-sm-2  site">通州十字路监测站点</label>
+                                <div class="col-sm-4">
+                                    <select class="road-site">
+                                        <option class="active">选择检测站点</option>
+                                        <option>选择检测站点</option>
+                                        <option>选择检测站点</option>
+                                        <option>选择检测站点</option>
+                                    </select>
+                                </div>
+                                <label  class="col-sm-2 control-label latestData">最新数据:</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control time-latest"
+                                           value="2017-01-01 ：14：20：00" >
+                                </div>
+                                <a class="col-sm-1 refresh-icon"><i class="glyphicon glyphicon-refresh pull-left" style="padding-top: 10px ;margin-left: -75px"></i></a>
+                            </div>
+                            <div class="col-sm-2 control-label weather" > 北京市 &nbsp;&nbsp; 北京市 &nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp;<span class="temp"> 28</span> &nbsp;&nbsp; 晴 &nbsp;&nbsp; 西北风</div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                                <div class="panel panel-default dataPanel">
+                                    <div class="panel-heading history-data">
+                                        <div class="row">
+                                            <div class="col-sm-2 current-data">
+                                                <span class=" air-quality">PM2.5</span> | <span class="current">当前数值：140mol/L</span>
+                                            </div>
+                                            <div class="col-sm-3 col-sm-offset-4 current-data">采集时间  : 2017-01-01 10:15:15 <i class="glyphicon glyphicon-refresh"></i></div>
+                                            <div class="col-sm-3 current-data">
+                                                采集周期:
+                                                <input class=" time" />
+                                                分钟
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart1" style="width: 100%;height:300px;"> </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default dataPanel">
+                                    <div class="panel-heading history-data">
+                                        <div class="row">
+                                            <div class="col-sm-2 current-data">
+                                                <span class=" air-quality">PM2.5</span> | <span class="current">当前数值：140mol/L</span>
+                                            </div>
+                                            <div class="col-sm-3 col-sm-offset-4 current-data">采集时间  : 2017-01-01 10:15:15  <i class="glyphicon glyphicon-refresh"></i></div>
+                                            <div class="col-sm-3 current-data">
+                                                采集周期:
+                                                <input class=" time" />
+                                                分钟
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart2" style="width: 100%;height:300px;"> </div>
+                                    </div>
+                                </div>
+                           </div>
+                    <div class="swiper-slide">
+                          <div class="panel panel-default dataPanel">
+                                    <div class="panel-heading history-data">
+                                        <div class="row">
+                                            <div class="col-sm-2 current-data">
+                                                <span class=" air-quality">PM2.5</span> | <span class="current">当前数值：140mol/L</span>
+                                            </div>
+                                            <div class="col-sm-3 col-sm-offset-4 current-data">采集时间  : 2017-01-01 10:15:15</div>
+                                            <div class="col-sm-3 current-data">
+                                                采集周期:
+                                                <input class=" time" />
+                                                分钟
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart3" style="width: 100%;height:300px;"> </div>
+                                    </div>
+                                </div>
+                               <div class="panel panel-default dataPanel">
+                                    <div class="panel-heading history-data">
+                                        <div class="row">
+                                            <div class="col-sm-2 current-data">
+                                                <span class=" air-quality">PM2.5</span> | <span class="current">当前数值：140mol/L</span>
+                                            </div>
+                                            <div class="col-sm-3 col-sm-offset-4 current-data">采集时间  : 2017-01-01 10:15:15</div>
+                                            <div class="col-sm-3 current-data">
+                                                采集周期:
+                                                <input class=" time" />
+                                                分钟
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="chart4" style="width: 100%;height:300px;"> </div>
+                                    </div>
+                                </div>
+                           </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="./assets/js/plugins/jquery-1.11.1.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- 最新的 Bootstrap-table 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+    <!-- 最新的 Bootstrap-table 中文支持 文件 -->
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>-->
+    <!--swiper 文件-->
+    <script src="./assets/js/plugins/swiper-3.4.2.min.js"></script>
+    <!-- userMgmt.js -->
+    <script src="./assets/js/userMgmt.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal',
+            loop: false,
+            // 如果需要前进后退按钮
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        })
+    </script>
+</body>
+<script>
+    $(function(){
+        setPM();
+    })
+    function setPM() {
+        var chart1 = echarts.init(document.getElementById('chart1'));
+        var chart2 = echarts.init(document.getElementById('chart2'));
+        var chart3 = echarts.init(document.getElementById('chart3'));
+        var chart4 = echarts.init(document.getElementById('chart4'));
+        option = {
+            title: {
+                text: '单位 ug/m',
+                textStyle:{    //图例文字的样式
+                    color:'#fff'
+                }
+//                subtext: '纯属虚构'
+            },
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['最高气温'],
+                textStyle:{    //图例文字的样式
+                    color:'#fff'
+                }
+            },
+            toolbox: {
+                show: false,
+                feature: {
+                    dataZoom: {
+                        yAxisIndex: 'none'
+                    },
+                    dataView: {readOnly: false},
+                    magicType: {type: ['line', 'bar']}
+
+
+                }
+            },
+            axisLine:{
+                lineStyle:{
+                    color:'#fff'
+                }
+            },
+            dataZoom : {
+                show : true,
+                realtime: true,
+                start : 50,
+                end : 100,
+                textStyle:{
+                    color: '#fff'
+                },
+                lineStyle:{
+                    color:'#fff'
+                }
+            },
+            xAxis:  {
+                textStyle:{
+                    color: '#fff'
+                },
+                type: 'category',
+                scale: true,
+                axisLine:{
+                    lineStyle:{
+                        color:'#fff'
+                    }
+                },
+                axisLabel:{
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                },
+                boundaryGap: false,
+                data: ['周一','周二','周三','周四','周五','周六','周日']
+            },
+            yAxis: {
+                textStyle:{
+                    color: '#fff'
+                },
+                axisLine:{
+                    lineStyle:{
+                        color:'#fff'
+                    }
+                },
+                type: 'value',
+                axisLabel: {
+                    formatter: '{value} °C',
+                    show: true,
+                    textStyle: {
+                        color: '#fff'
+                    }
+                }
+            },
+            series: [
+                {
+                    name:'最高气温',
+                    type:'line',
+                    data:[11, 11, 15, 13, 12, 13, 10],
+                    markPoint: {
+                        data: [
+                            {type: 'max', name: '最大值'},
+                            {type: 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine: {
+                        data: [
+                            {type: 'average', name: '平均值'}
+                        ]
+                    }
+                },
+            ]
+        };
+        chart1.setOption(option);
+        chart2.setOption(option);
+        chart3.setOption(option);
+        chart4.setOption(option);
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,307 @@
+﻿/*!
+ * unusualWaring页面css代码。
+ */
+@charset 'utf-8';
+html,
+body
+{
+    font-family: 'Microsoft YaHei' !important;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+/* 背景径向渐变
+   ========================================================================== */
+
+/* body
+{
+    background: radial-gradient(circle at 0px 0px, rgba(255, 121, 197, .75) 2.5%, rgb(95, 125, 187) 35%, rgb(153, 222, 238) 75%);
+}
+ */
+/* navbar-default
+   ========================================================================== */
+
+.navbar-default
+{
+    background: transparent;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form
+{
+    color: #fff;
+    border-color: rgba(255, 255, 255, .2);
+}
+
+.navbar-default .navbar-nav > li > a
+{
+    color: #fff;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a
+{
+    color: #fff;
+}
+
+.navbar-collapse
+{
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+}
+/* navbar-header
+   ========================================================================== */
+
+.navbar-toggle
+{
+    float: left;
+
+    margin-left: 15px;
+
+    color: #fff;
+    border: none;
+}
+
+.navbar-toggle.navbar-refresh
+{
+    float: right;
+
+    margin-right: 15px;
+}
+
+.navbar-default .navbar-toggle .icon-bar
+{
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover
+{
+    background-color: rgba(51, 51, 51, .8);
+}
+
+.navbar-default
+{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    margin: 0;
+
+    border: none;
+}
+/* .site-content
+   ========================================================================== */
+
+.site-content
+{
+    margin-top: 54px;
+}
+/* .site-title
+   ========================================================================== */
+
+.site-title
+{
+    font-size: 16px;
+    line-height: 32px;
+
+    height: 32px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    background: rgba(0, 0, 0, .3);
+}
+/* .site-info
+   ========================================================================== */
+
+.site-info
+{
+    font-size: 14px;
+
+    padding: 5px 15px;
+
+    color: #fff;
+}
+
+.site-info__param
+{
+    margin-top: 15px;
+}
+.site-info__param input
+{
+    width: 53%;
+    padding: 5px 10px;
+
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .2);
+}
+.site-info__param--input input:nth-child(1)
+{
+    width: 30%;
+}
+.site-controlBox
+{
+    margin-top: 20px;
+    padding: 5px 20px;
+
+    color: #fff;
+}
+.site-controlBox__group
+{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox-inline + .checkbox-inline,
+.radio-inline + .radio-inline
+{
+    margin: 0;
+}
+
+
+/* .site-table
+   ========================================================================== */
+.site-table
+{
+    overflow: auto;
+
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px 20px;
+}
+
+/********************************************************************/
+.siteWaring-list
+{
+    margin-bottom: 20px;
+    padding-left: 0;
+
+    background-color: rgba(51, 51, 51, .2);
+}
+.site-name
+{
+    display: block;
+
+    padding: 10px 15px;
+
+    color: #fff;
+    border-top: 1px solid rgba(255,255,255,.2);
+    border-radius: 0;
+    background-color: transparent;
+}
+/**********************按钮 start************************/
+
+
+.toggle
+{
+    position: relative;
+
+    display: block;
+
+    width: 60px;
+    height: 30px;
+    margin-top: -35px;
+
+    -webkit-transition: all 500ms;
+       -moz-transition: all 500ms;
+         -o-transition: all 500ms;
+            transition: all 500ms;
+    text-decoration: none !important;
+
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 100px;
+    outline: 0;
+    background-color: #428bca;
+}
+.toggle:after
+{
+    line-height: 45px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: calc(50%);
+
+    -webkit-transition: all 500ms;
+       -moz-transition: all 500ms;
+         -o-transition: all 500ms;
+            transition: all 500ms;
+    text-align: center;
+    text-transform: uppercase;
+    /*font-size: 20px;*/
+
+    color: white;
+    background-color: #fff;
+    /*content: '消警';*/
+}
+.toggle--on:after
+{
+    content: '';
+    text-align: center;
+    vertical-align: middle;
+
+    color: #428bca;
+    border-radius: 50px 50px 50px 50px;
+}
+.toggle--on
+{
+    background-color: #4576a4;
+}
+.toggle--off:after
+{
+    content: '';
+    -webkit-transform: translate(100%, 0);
+       -moz-transform: translate(100%, 0);
+         -o-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+    text-align: center;
+
+    color: #428bca;
+    border-radius: 50px;
+}
+.toggle--moving:after
+{
+    -webkit-transition: color 0s, transform 500ms, border-radius 500ms, background-color 500ms;
+       -moz-transition: color 0s, transform 500ms, border-radius 500ms, background-color 500ms;
+         -o-transition: color 0s, transform 500ms, border-radius 500ms, background-color 500ms;
+            transition: color 0s, transform 500ms, border-radius 500ms, background-color 500ms;
+            transition: color 0s, transform 500ms, border-radius 500ms, background-color 500ms;
+
+    color: transparent;
+    border-color: #fff;
+    background-color: #fff;
+}
+/*****************************按钮  end*********************/
+#delete-waring
+{
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+#delete-waring1
+{
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    text-decoration: none;
+
+    color: #fff;
+}

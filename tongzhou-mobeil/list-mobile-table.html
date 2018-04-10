@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 让IE浏览器用最高级内核渲染页面 还有用 Chrome 框架的页面用webkit 内核 ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- IOS6全屏 Chrome高版本全屏
+    ================================================== -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- 让360双核浏览器用webkit内核渲染页面
+    ================================================== -->
+    <meta name="renderer" content="webkit">
+    <!-- !!!注意 minimal-ui 是IOS7.1的新属性，最小化浏览器UI -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="format-detection" content="telephone=no">
+    <title>通州环境监测系统</title>
+    <!-- CSS
+    ================================================== -->
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./assets/js/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- 最新版本的 Bootstrap-table 核心 CSS 文件 -->
+    <link href="./assets/js/plugins/bootstrap/css/bootstrap-table.min.css" rel="stylesheet">
+    <!-- icons -->
+    <link href="./assets/css/plugins/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/plugins/lCalendar.css">
+    <link rel="stylesheet" href="./assets/css/plugins/animate.css">
+    <!-- list-mobile -->
+    <link href="./assets/css/global.css" rel="stylesheet">
+    <link href="./assets/css/list-mobile.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed navbtn" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="title">监测列表</span>
+                <button type="button" class="navbar-refresh">
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- 公共导航 -->
+    <ul class="global-nav animated bounceInLeft bounceOutLeft">
+        <a href="">
+            <li><span><i class="fa fa-refresh" aria-hidden="true"></i></span>大气监测</li>
+        </a>
+        <a href="">
+            <li><span><i class="fa fa-refresh" aria-hidden="true"></i></span>水质监测</li>
+        </a>
+        <a href="">
+            <li><span><i class="fa fa-refresh" aria-hidden="true"></i></span>历史数据</li>
+        </a>
+        <a href="">
+            <li><span><i class="fa fa-refresh" aria-hidden="true"></i></span>报警信息</li>
+        </a>
+    </ul>
+    <div class="mark"></div>
+    <div class="site-togglePage">
+        <div class="btn-group-vertical" role="group" aria-label="...">
+            <button type="button" class="btn btn-primary">地图监控</button>
+            <button type="button" class="btn btn-default">列表监控</button>
+        </div>
+    </div>
+    <div class="site-content">
+        <div class="site-title">监控站点一览表</div>
+        <div class="site-info">
+            <div class="site-info__param">
+                <span>实时数据：</span>
+                <input type="text" value="2017-01-01 12:30:54">
+                <!-- <span><i class="fa fa-refresh" aria-hidden="true"></i></span> -->
+            </div>
+            <div class="site-info__param" style="display:none;">
+                <span>小时均值：</span>
+                <input type="text" value="2017-01-01" class="site-info__param--date" id="site-date">
+                <input type="text" value="12:00" class="site-info__param--hours" id="site-time">
+            </div>
+            <div class="site-info__param" style="display:none;">
+                <span>日均值：</span>
+                <input type="text" value="2017-01-01" id="day-date" class="site-info__param--dayzhi">
+            </div>
+        </div>
+        <div class="site-table">
+            <!-- bootstrap-table 核心 HTML 代码 -->
+            <table id="table" data-show-columns="true" data-show-refresh="true" data-toolbar="#toolbar" data-show-export="true" data-minimum-count-columns="2"></table>
+        </div>
+    </div>
+    <!-- 最新的 Jquery 核心 JavaScript 文件 -->
+    <script src="./assets/js/plugins/jquery-1.11.1.js"></script>
+    <script src="./assets/js/plugins/lCalendar.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="./assets/js/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 最新的 Bootstrap-table 核心 JavaScript 文件 -->
+    <script src="./assets/js/plugins/bootstrap/js/bootstrap-table.min.js"></script>
+    <!-- 最新的 Bootstrap-table 中文支持 文件 -->
+    <script src="./assets/js/plugins/bootstrap/js/bootstrap-table-cn-en.js"></script>
+    <!-- map-mobile JavaScript 文件 -->
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/list-mobile.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
